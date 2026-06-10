@@ -41,7 +41,7 @@ vector_store.add_documents(splitted_text)
 bm25_retriever = BM25Retriever.from_documents(splitted_text)
 bm25_retriever.k = 4
 
-# Chroma Retriever (semantic search)
+# Chroma Retriever (semantic search)n
 chroma_retriever = vector_store.as_retriever(search_kwargs={"k": 4})
 
 # Hybrid = BM25 + Chroma (50% weight each)

@@ -52,7 +52,7 @@ ensemble_retriever = EnsembleRetriever(
 
 res = ensemble_retriever.invoke(query)
 
-# Build context from retrieved chunks
+# Build context from retrieved chunksss
 context = "\n\n".join([doc.page_content for doc in res])
 
 # Prompt templatef

@@ -55,7 +55,7 @@ res = ensemble_retriever.invoke(query)
 # Build context from retrieved chunks
 context = "\n\n".join([doc.page_content for doc in res])
 
-# Prompt template
+# Prompt templatef
 prompt = ChatPromptTemplate.from_template("""
 You are a helpful assistant. Answer the question using ONLY the context provided below.
 If the answer is not in the context, say "I don't know based on the document."
